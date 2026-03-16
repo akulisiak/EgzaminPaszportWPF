@@ -8,4 +8,34 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="img\000-odcisk.jpg" />
+    <None Remove="img\000-zdjecie.jpg" />
+    <None Remove="img\111-odcisk.jpg" />
+    <None Remove="img\111-zdjecie.jpg" />
+    <None Remove="img\333-odcisk.jpg" />
+    <None Remove="img\333-zdjecie.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="img\000-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\000-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\111-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\111-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\333-odcisk.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\333-zdjecie.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

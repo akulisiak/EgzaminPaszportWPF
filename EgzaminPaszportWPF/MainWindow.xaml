@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EgzaminPaszportWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Background="CadetBlue"
+        Title="Wprowadzenie danych do paszportu. Wykonał: 021321321" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="37*"/>
+            <RowDefinition Height="398*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Numer:" HorizontalAlignment="Left" Margin="44,10,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Imię:" HorizontalAlignment="Left" Margin="44,54,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="Nazwisko:" HorizontalAlignment="Left" Margin="44,98,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox Name="numerText" HorizontalAlignment="Left" Margin="159,5,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Height="35" Grid.Row="1" Background="Azure" LostFocus="UpdatePhoto" />
+        <TextBox Name="imieText" HorizontalAlignment="Left" Margin="159,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Height="35" Grid.Row="1" Background="Azure"/>
+        <TextBox Name="nazwiskoText" HorizontalAlignment="Left" Margin="159,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Height="35" Grid.Row="1" Background="Azure"/>
+        <GroupBox Header="Kolor oczu" Margin="44,161,411,54" Grid.Row="1">
+            <StackPanel Height="110">
+                <RadioButton Name="niebieskiRadio" Content="niebieski" Margin="10px" IsChecked="true" GroupName="kolorOczu"/>
+                <RadioButton Name="zielonyRadio" Content="zielone" Margin="10px" GroupName="kolorOczu"/>
+                <RadioButton Name="piwnyRadio" Content="piwne" Margin="10px" GroupName="kolorOczu"/>
+            </StackPanel>
+        </GroupBox>
+        <Button Name="okButton" Content="OK" HorizontalAlignment="Left" Margin="484,303,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="228" Background="Azure" Click="okButton_Click"/>
+        <Image Name="zdjecieImg" HorizontalAlignment="Left" Height="180" Margin="447,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="157" Source="/img/000-zdjecie.jpg"/>
+        <Image Name="odciskImg" HorizontalAlignment="Left" Height="180" Margin="622,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Source="/img/000-odcisk.jpg"/>
     </Grid>
 </Window>
