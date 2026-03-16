@@ -26,7 +26,7 @@
             </StackPanel>
         </GroupBox>
         <Button Name="okButton" Content="OK" HorizontalAlignment="Left" Margin="484,303,0,0" Grid.Row="1" VerticalAlignment="Top" Height="40" Width="228" Background="Azure" Click="okButton_Click"/>
-        <Image Name="zdjecieImg" HorizontalAlignment="Left" Height="180" Margin="447,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="157" Source="/img/000-zdjecie.jpg"/>
-        <Image Name="odciskImg" HorizontalAlignment="Left" Height="180" Margin="622,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" Source="/img/000-odcisk.jpg"/>
+        <Image Name="zdjecieImg" HorizontalAlignment="Left" Height="180" Margin="447,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="157" />
+        <Image Name="odciskImg" HorizontalAlignment="Left" Height="180" Margin="622,54,0,0" Grid.Row="1" VerticalAlignment="Top" Width="140" />
     </Grid>
 </Window>
